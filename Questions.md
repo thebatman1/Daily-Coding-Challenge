@@ -8,7 +8,7 @@ This file contains the list of questions and whether they have been solved or no
 - [x] Pair Problem
 - [x] Xor Linked List
 - [x] Decodable Ways
-- [ ] Unival Tree
+- [x] Unival Tree
 - [ ] Largest Non-Adjacent Sum
 - [ ] Job Scheduler
 - [ ] Auto Complete System
