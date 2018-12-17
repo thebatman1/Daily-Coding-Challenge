@@ -9,5 +9,6 @@ public:
 	Node(const int &);
 	void add(const int &);
 	const int get(int &);
+    void traverse();
 };
 #endif

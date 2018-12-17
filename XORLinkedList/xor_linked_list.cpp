@@ -17,7 +17,13 @@ int main(void) {
 			head->add(m);
 		}
 	}
-	int index = 4;
+	int index;
+    cout << "Enter the index to get the data: ";
+    cin >> index;
+    while (index >= n) {
+        cout << "Enter a valid index (less than "<< n <<"): ";
+        cin >> index;
+    }
 	cout << head->get(index) << "\n";
 	return 0;
 }
