@@ -9,7 +9,7 @@ This file contains the list of questions and whether they have been solved or no
 - [x] Xor Linked List
 - [x] Decodable Ways
 - [x] Unival Tree
-- [ ] Largest Non-Adjacent Sum
+- [x] Largest Non-Adjacent Sum
 - [ ] Job Scheduler
 - [ ] Auto Complete System
 - [x] Climb Steps
