@@ -7,7 +7,7 @@ This file contains the list of questions and whether they have been solved or no
 - [x] First Missing Positive Integer
 - [x] Pair Problem
 - [x] Xor Linked List
-- [ ] Decodable Ways
+- [x] Decodable Ways
 - [ ] Unival Tree
 - [ ] Largest Non-Adjacent Sum
 - [ ] Job Scheduler
