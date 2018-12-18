@@ -11,7 +11,7 @@ This file contains the list of questions and whether they have been solved or no
 - [x] Unival Tree
 - [x] Largest Non-Adjacent Sum
 - [x] Job Scheduler
-- [ ] Auto Complete System
+- [x] Auto Complete System
 - [x] Climb Steps
 - [ ] Longest Substring with K characters
 - [ ] Estimate pi using Monte Carlo method
