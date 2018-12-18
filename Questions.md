@@ -10,7 +10,7 @@ This file contains the list of questions and whether they have been solved or no
 - [x] Decodable Ways
 - [x] Unival Tree
 - [x] Largest Non-Adjacent Sum
-- [ ] Job Scheduler
+- [x] Job Scheduler
 - [ ] Auto Complete System
 - [x] Climb Steps
 - [ ] Longest Substring with K characters
