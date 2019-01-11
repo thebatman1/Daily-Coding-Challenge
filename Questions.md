@@ -22,3 +22,4 @@ This file contains the list of questions and whether they have been solved or no
 - [ ] Minimum cost to color a house
 - [ ] Find intersecting node
 - [ ] Minimum no of rooms
+- [x] Maximum profit stock
