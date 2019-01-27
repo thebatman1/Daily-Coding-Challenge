@@ -23,4 +23,5 @@ This file contains the list of questions and whether they have been solved or no
 - [ ] Find intersecting node
 - [ ] Minimum no of rooms
 - [x] Maximum profit stock
+- [x] Integer Exponentiation
 - [x] No of ways to go from top left to bottom right
