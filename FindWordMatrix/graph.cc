@@ -2,12 +2,7 @@
 
 
 void Graph::add_edge(const char & src, const char & des) {
-	if (adj.find(src) == adj.end()) {
-		std::unordered_set<char> temp;
-		adj.insert(make_pair(src, temp));	
-	} else {
-		adj[src].insert(des);
-	}
+    adj[src].insert(des);
 }
 
 

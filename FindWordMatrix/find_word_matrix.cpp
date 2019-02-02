@@ -40,7 +40,11 @@ int main(void) {
 	string word;
 	cout << "Enter the word to be searched!";
 	cin >> word;
-	find_word(chars, word);
+	if (find_word(chars, word)) {
+        cout << "Found!\n"; 
+    } else {
+        cout << "Not Found!\n"; 
+    }
     return 0;
 }
 
@@ -49,12 +53,16 @@ Graph create_graph(const vector<vector<char>> & chars) {
 	Graph g;
 	const int n = chars.size();
 	const int m = chars.at(0).size();
-	for (int i = 0; i < n; ++i) {
+	for (int i = 0; i < n - 1; ++i) {
 		for (int j = 0; j < m; ++j) {
 			g.add_edge(chars[i][j], chars[i + 1][j]);	
-			g.add_edge(chars[i][j], chars[i][j + 1]);	
+            if (j != m - 1)
+                g.add_edge(chars[i][j], chars[i][j + 1]);	
 		}	
 	}
+    for (int j = 0; j < m - 1; ++j) {
+        g.add_edge(chars[n - 1][j], chars[n - 1][j + 1]); 
+    }
 	return g;
 }
 
