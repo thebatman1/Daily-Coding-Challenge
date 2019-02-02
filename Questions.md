@@ -25,4 +25,5 @@ This file contains the list of questions and whether they have been solved or no
 - [x] Maximum profit stock
 - [x] Integer Exponentiation
 - [x] No of ways to go from top left to bottom right
+- [x] Find a word in a matrix
 - [x] Print a matrix in clockwise spiral order
