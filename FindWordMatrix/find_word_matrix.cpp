@@ -1,12 +1,65 @@
 #include <iostream>
 #include <vector>
+#include "graph.h"
 
 using namespace std;
 
+
+/** Function to generate a graph of alphabets
+ * 	@param chars : A 2-d matrix of characters
+ * 	@returns     : A graph object
+ */
+Graph create_graph(const vector<vector<char>> &);
+
+
+/** Function to find the word among the matrix
+ *  @param chars : A 2-d matrix of characters
+ *  @param word  : A string to be found in the matrix
+ *  @returns     : A boolean value to show if the word is present or not
+ */
+bool find_word(const vector<vector<char>> &, const string &);
+
+
 int main(void) {
-    int n;
+    int n, m;
     cout << "Enter the no of rows: ";
     cin >> n;
+	cout << "Enter the no of columns: ";
+	cin >> m;
+	cout << "Enter the characters: ";
+	vector<vector<char>> chars;
+	for (int i = 0; i < n; ++i) {
+		vector<char> temp;
+		for (int j = 0; j < m; ++j) {
+			char ch;
+			cin >> ch;	
+			temp.push_back(ch);
+		}	
+		chars.push_back(temp);
+	}
+	string word;
+	cout << "Enter the word to be searched!";
+	cin >> word;
+	find_word(chars, word);
     return 0;
+}
+
+
+Graph create_graph(const vector<vector<char>> & chars) {
+	Graph g;
+	const int n = chars.size();
+	const int m = chars.at(0).size();
+	for (int i = 0; i < n; ++i) {
+		for (int j = 0; j < m; ++j) {
+			g.add_edge(chars[i][j], chars[i + 1][j]);	
+			g.add_edge(chars[i][j], chars[i][j + 1]);	
+		}	
+	}
+	return g;
+}
+
+
+bool find_word(const vector<vector<char>> & chars, const string & word) {
+	return (create_graph(chars)).find_path(word);
 }
 
