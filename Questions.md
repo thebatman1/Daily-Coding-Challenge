@@ -27,3 +27,4 @@ This file contains the list of questions and whether they have been solved or no
 - [x] No of ways to go from top left to bottom right
 - [x] Find a word in a matrix
 - [x] Print a matrix in clockwise spiral order
+- [x] Find nearest larger number given an array
