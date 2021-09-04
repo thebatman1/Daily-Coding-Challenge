@@ -17,7 +17,7 @@ int main() {
 	int * nearest_larger_number = get_nearest_larger_number(a, n);
 	int i;
 	cin >> i;
-	if (i >= n || nearest_larger_number[i] == INT_MAX) {
+	if (i < 0 || i >= n || nearest_larger_number[i] == INT_MAX) {
 		cout << "null\n";
 	} else {
 		cout << nearest_larger_number[i] << '\n';
