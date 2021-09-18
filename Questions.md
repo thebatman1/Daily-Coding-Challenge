@@ -29,4 +29,5 @@ This file contains the list of questions and whether they have been solved or no
 - [x] Print a matrix in clockwise spiral order
 - [x] Find the longest consecutive run of 1 in the binary form of a number
 - [x] Find nearest larger number given an array
+- [x] Find the minimum element in a sorted rotated array
 
